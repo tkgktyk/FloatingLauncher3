@@ -31,10 +31,6 @@ import android.appwidget.AppWidgetHostView;
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -77,8 +73,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -1346,12 +1340,12 @@ public class Workspace extends SmoothPagedView
     protected void setWallpaperDimension() {
         new AsyncTask<Void, Void, Void>() {
             public Void doInBackground(Void ... args) {
-                String spKey = WallpaperCropActivity.getSharedPreferencesKey();
-                SharedPreferences sp =
-                        mLauncher.getSharedPreferences(spKey, Context.MODE_MULTI_PROCESS);
-                LauncherWallpaperPickerActivity.suggestWallpaperDimension(mLauncher.getResources(),
-                        sp, mLauncher.getWindowManager(), mWallpaperManager,
-                        mLauncher.overrideWallpaperDimensions());
+//                String spKey = WallpaperCropActivity.getSharedPreferencesKey();
+//                SharedPreferences sp =
+//                        mLauncher.getSharedPreferences(spKey, Context.MODE_MULTI_PROCESS);
+//                LauncherWallpaperPickerActivity.suggestWallpaperDimension(mLauncher.getResources(),
+//                        sp, mLauncher.getWindowManager(), mWallpaperManager,
+//                        mLauncher.overrideWallpaperDimensions());
                 return null;
             }
         }.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, (Void) null);

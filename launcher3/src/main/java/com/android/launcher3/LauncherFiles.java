@@ -21,8 +21,8 @@ public class LauncherFiles {
     public static final String LAUNCHES_LOG = "launches.log";
     public static final String SHARED_PREFERENCES_KEY = "com.android.launcher3.prefs";
     public static final String STATS_LOG = "stats.log";
-    public static final String WALLPAPER_CROP_PREFERENCES_KEY =
-            WallpaperCropActivity.class.getName();
+//    public static final String WALLPAPER_CROP_PREFERENCES_KEY =
+//            WallpaperCropActivity.class.getName();
     public static final String WALLPAPER_IMAGES_DB = "saved_wallpaper_images.db";
     public static final String WIDGET_PREVIEWS_DB = "widgetpreviews.db";
 
@@ -34,7 +34,7 @@ public class LauncherFiles {
             LAUNCHES_LOG,
             SHARED_PREFERENCES_KEY + XML,
             STATS_LOG,
-            WALLPAPER_CROP_PREFERENCES_KEY + XML,
+//            WALLPAPER_CROP_PREFERENCES_KEY + XML,
             WALLPAPER_IMAGES_DB,
             WIDGET_PREVIEWS_DB));
 }
