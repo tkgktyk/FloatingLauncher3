@@ -2508,6 +2508,8 @@ public class Launcher extends Activity
             // Back button is a no-op here, but give at least some feedback for the button press
             mWorkspace.showOutlinesTemporarily();
         } else {
+            // ignore exit animation
+            overridePendingTransition(0, 0);
             super.onBackPressed();
         }
     }
