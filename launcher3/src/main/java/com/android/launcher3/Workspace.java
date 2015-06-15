@@ -2081,9 +2081,11 @@ public class Workspace extends SmoothPagedView
         mDragOutline = createDragOutline(b, DRAG_BITMAP_PADDING, size[0], size[1], clipAlpha);
     }
 
-    public void exitWidgetResizeMode() {
+    public boolean exitWidgetResizeMode() {
         DragLayer dragLayer = mLauncher.getDragLayer();
+        boolean ret = dragLayer.isWidgetBeingResized() || dragLayer.hasResizeFrames();
         dragLayer.clearAllResizeFrames();
+        return ret;
     }
 
     private void initAnimationArrays() {
