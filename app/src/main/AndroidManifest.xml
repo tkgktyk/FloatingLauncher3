@@ -61,7 +61,7 @@
         android:supportsRtl="true">
 
         <activity
-            android:name="com.android.launcher3.Launcher"
+            android:name=".Launcher"
             android:enabled="true"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
