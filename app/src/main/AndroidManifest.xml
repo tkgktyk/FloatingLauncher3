@@ -62,9 +62,10 @@
 
         <activity
             android:name="com.android.launcher3.Launcher"
-            android:clearTaskOnLaunch="true"
             android:enabled="true"
+            android:excludeFromRecents="true"
             android:launchMode="singleTask"
+            android:noHistory="false"
             android:screenOrientation="nosensor"
             android:stateNotNeeded="true"
             android:theme="@style/Theme"
@@ -80,7 +81,6 @@
 
         <activity
             android:name="com.android.launcher3.LauncherExtension"
-            android:clearTaskOnLaunch="true"
             android:enabled="false"
             android:launchMode="singleTask"
             android:screenOrientation="nosensor"
@@ -91,7 +91,6 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
-                <category android:name="android.intent.category.HOME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.MONKEY"/>
             </intent-filter>
