@@ -2509,7 +2509,7 @@ public class Launcher extends Activity
             mWorkspace.showOutlinesTemporarily();
         } else {
             // ignore exit animation
-            overridePendingTransition(0, 0);
+//            overridePendingTransition(0, 0);
             super.onBackPressed();
         }
     }
