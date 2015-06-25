@@ -1,5 +1,6 @@
-<manifest package="jp.tkgktyk.dummyhome"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest
+    package="jp.tkgktyk.dummyhome"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,6 @@
             android:clearTaskOnLaunch="true"
             android:enabled="true"
             android:launchMode="singleTask"
-            android:screenOrientation="nosensor"
             android:stateNotNeeded="true"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan">
@@ -20,6 +20,17 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsDialogActivity"
+            android:theme="@style/DialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>

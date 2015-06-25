@@ -1,0 +1,5 @@
+<resources>
+    <!-- BaseSettings -->
+    <string name="current_s1">Current: %1$s</string>
+    <string name="not_selected">Not selected</string>
+</resources>

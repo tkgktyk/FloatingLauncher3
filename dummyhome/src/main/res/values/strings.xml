@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Dummy Home</string>
+
+    <string name="not_found">Not found</string>
+
+    <string name="key_launcher" translatable="false">key_launcher</string>
+    <string name="title_launcher">Launcher</string>
 </resources>

@@ -2511,8 +2511,12 @@ public class Launcher extends Activity
             // ignore exit animation
 //            overridePendingTransition(0, 0);
 //            super.onBackPressed();
-            moveTaskToBack(true);
+            hide();
         }
+    }
+
+    public void hide() {
+        moveTaskToBack(true);
     }
 
     /**

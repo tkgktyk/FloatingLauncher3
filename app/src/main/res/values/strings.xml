@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Floating Launcher3</string>
+
+    <string name="key_size" translatable="false">key_size</string>
+    <string name="default_size" translatable="false">100</string>
+    <string name="title_size">Size</string>
+    <string name="unit_size">%</string>
 </resources>

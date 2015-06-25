@@ -1,1 +1,1 @@
-include ':app', ':launcher3', ':dummyhome'
+include ':app', ':launcher3', ':dummyhome', ':lib'
