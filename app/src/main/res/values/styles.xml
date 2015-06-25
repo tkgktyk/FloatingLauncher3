@@ -1,11 +1,9 @@
 <resources>
 
-    <style name="Theme" parent="@android:style/Theme.DeviceDefault.NoActionBar.TranslucentDecor">
+    <style name="Theme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.5</item>
         <!-- Note that we use the base animation style here (that is no
          animations) because we really have no idea how this kind of
          activity will be used. -->
