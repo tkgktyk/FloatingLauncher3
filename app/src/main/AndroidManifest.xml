@@ -35,6 +35,10 @@
         android:protectionLevel="signatureOrSystem"/>
 
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -78,8 +82,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SettingsDialogActivity"
-                  android:theme="@style/DialogTheme"/>
+        <activity
+            android:name=".SettingsDialogActivity"
+            android:theme="@style/DialogTheme"/>
 
         <activity
             android:name="com.android.launcher3.LauncherExtension"
