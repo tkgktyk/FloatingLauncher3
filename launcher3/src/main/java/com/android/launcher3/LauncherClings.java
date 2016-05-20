@@ -23,10 +23,13 @@ import android.animation.PropertyValuesHolder;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Point;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.provider.Settings;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -212,6 +215,13 @@ class LauncherClings implements OnClickListener {
     /** Returns whether the clings are enabled or should be shown */
     private boolean areClingsEnabled() {
         if (DISABLE_CLINGS) {
+            return false;
+        }
+
+        Display display = mLauncher.getWindowManager().getDefaultDisplay();
+        Point point = new Point(0, 0);
+        display.getRealSize(point);
+        if (Math.max(point.x, point.y) < 500) {
             return false;
         }
 
