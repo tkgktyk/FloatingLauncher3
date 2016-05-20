@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Floating Navigation</string>
+
+    <!-- Notification -->
+    <string name="state_running">Running</string>
+    <string name="state_disabled">Disabled</string>
+
+    <!-- Action Picker -->
+    <string name="tools">Tools</string>
+    <string name="apps">Apps</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="none">None</string>
+    <!-- Tool -->
+    <string name="action_back">Back</string>
+    <string name="action_home">Home</string>
+    <string name="action_recents">Recents</string>
+    <string name="action_expand_notifications">Expand Notifications</string>
+    <string name="action_expand_quick_settings">Expand Quick Settings</string>
+    <string name="action_kill">Kill Foreground App</string>
+
+    <string name="not_found">Not found</string>
+
+    <!-- MainActivity -->
+    <string name="master_switch">Master switch</string>
+</resources>

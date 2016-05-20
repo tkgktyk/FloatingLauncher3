@@ -135,7 +135,7 @@ public final class Utilities {
     /**
      * Returns a bitmap which is of the appropriate size to be displayed as an icon
      */
-    static Bitmap createIconBitmap(Bitmap icon, Context context) {
+    public static Bitmap createIconBitmap(Bitmap icon, Context context) {
         synchronized (sCanvas) { // we share the statics :-(
             if (sIconWidth == -1) {
                 initStatics(context);
